@@ -32,6 +32,7 @@ body {
 	width: 100%;
 	color: #fff;
 	cursor: pointer;
+	font-size: 1.6rem;
 
 	max-width: 550px;
 	
@@ -44,7 +45,7 @@ body {
 }
 
 .credit-card.active{
-	transform:rotateY(180deg)
+	transform:rotateY(180deg);
 }
 
 .credit-card > div{
@@ -65,7 +66,7 @@ body {
 
 .credit-card .front{
 	width: 100%;
-	background: url(../img/bg-tarjeta/bg-tarjeta-01.jpg);
+	background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
 	background-size: cover;
 }
 
@@ -106,3 +107,88 @@ body {
 	justify-content: space-between;
 	margin-top: 20px;
 }
+
+
+/*Back*/
+
+.back{
+	background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	transform: scaleX(1);
+	transform:rotateY(180deg);
+	backface-visibility: hidden;
+}
+
+
+.back .magnetic-bar{
+	height: 40px;
+	background: #000;
+	width: 100%;
+
+	position: absolute;
+	top: 30px;
+	left: 0;
+
+}
+
+.back .datos{
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.back .datos p{
+	margin-bottom: 5px;
+}
+
+
+.back .group .label{
+	font-size: 1.6rem;
+	/* color: #7d8994; */
+	margin-bottom: 5px;
+}
+
+.back .datos #firma{
+	width: 70%;
+}
+
+.back .datos #firma .firma{
+	height: 40px;
+	background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px); 
+}
+
+.back .datos #firma .firma p{
+	line-height: 40px;
+	font-family: 'Liu Jian Mao Cao', cursive;
+	color: #000;
+	font-size: 3.0rem;
+	padding: 0 10px;
+	text-transform: capitalize;
+}
+
+.back .datos #ccv{
+	width: 20%;
+}
+
+.back .datos #ccv .ccv{
+	background: #fff;
+	height: 40px;
+	color: #000;
+	padding: 10px;
+	text-align: center;
+}
+
+.back .leyenda{
+	font-size:1.4rem;
+	line-height: 24px;
+}
+
+.back .link-bank{
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+
+
