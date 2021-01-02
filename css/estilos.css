@@ -1,0 +1,108 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body {
+	background: #ddeefc;
+	font-family: 'Lato', sans-serif;
+}
+
+.container{
+	width: 90%;
+	max-width: 1000px;
+	padding: 40px 20px;
+	margin: auto;
+	background: #ccc;
+}
+
+.container--flexbox{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*-----------------Estilos Generales de las tarjetas--------------------------------*/
+.credit-card{
+	width: 100%;
+	color: #fff;
+	cursor: pointer;
+
+	max-width: 550px;
+	
+	position: relative;
+	z-index: 2;
+	
+	transition: .3s ease all;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+}
+
+.credit-card.active{
+	transform:rotateY(180deg)
+}
+
+.credit-card > div{
+	box-shadow: 0 10px 10px 0 rgba(90,116,148,.3);
+	border-radius: 15px;
+
+	min-height: 315px;
+	padding:30px;
+
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+
+/*--------------Tarjeta Delantera-------------------------*/
+
+.credit-card .front{
+	width: 100%;
+	background: url(../img/bg-tarjeta/bg-tarjeta-01.jpg);
+	background-size: cover;
+}
+
+.front .logo-brand{
+	text-align: right;
+	min-height: 50px;
+}
+
+.front .logo-brand img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 80px;
+}
+
+.front .chip{
+	width: 100%;
+	max-width: 50px;
+	margin-bottom: 20px;
+}
+
+.front .group .label{
+	font-size: 1.6rem;
+	color: #7d8994;
+	margin-bottom: 5px;
+}
+
+.front .group .number,
+.front .group .name,
+.front .group .expiration{
+	color: #fff;
+	font-size: 2.0rem;
+	text-transform: uppercase;
+}
+
+.front .flexbox{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
