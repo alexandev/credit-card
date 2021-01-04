@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="container container--flexbox">
-		<section class="credit-card active" id="credit-card">
+		<section class="credit-card" id="credit-card">
 			<div class="front">
 				<div class="logo-brand">
 					<img src="img/logos/visa.png" alt=""/>
@@ -58,6 +58,53 @@
 				<a href="" class="link-bank">www.tubanco.com</a>
 			</div>
 		</section>
+
+		<div class="button-container">
+			<button class="btn-open-form" id="btn-open-form">
+				<i class="fas fa-plus icono"></i>
+			</button>
+		</div>
+
+		<form class="form-card" id="form-card">
+			<div class="group">
+				<label for="inputNumber">Numero Tarjeta</label>
+				<input type="text" id="inputNumber" maxlength="19" autocomplete="off">
+			</div>
+
+			<div class="group">
+				<label for="inputName">Nombre</label>
+				<input type="text" id="inputName" maxlength="19" autocomplete="off">
+			</div>
+
+			<div class="flexbox">
+				<div class="gruop expira">
+					<label for="selectMonth">Expiración</label>
+					<div class="flexbox">
+						<div class="group-select">
+							<select name="month" id="selectMont">
+								<option value="" disabled selected>Mes</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+
+						<div class="group-select">
+							<select name="year" id="selectYear">
+								<option value="" disabled selected>Año</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="group ccv">
+					<label for="inputCVV">CVV</label>
+					<input type="text" id="inputCVV" maxlength="3">
+				</div>
+			</div>
+
+			<button type="submit" class="btn-send">Enviar</button>
+		</form>
 	</div>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
